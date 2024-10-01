@@ -1,18 +1,13 @@
-# setup.py
-
 from setuptools import setup, find_packages
 
 setup(
-    name="pubsub-framework",
-    version="0.1",
+    name="pubsub_framework",
+    version="0.1.0",
+    description="A Pub/Sub framework with Google Pub/Sub support and error handling",
+    author="Your Name",
     packages=find_packages(),
     install_requires=[
-        "google-cloud-pubsub>=2.0.0",
+        "google-cloud-pubsub",
+        "loguru"
     ],
-    author="Your Name",
-    author_email="your.email@example.com",
-    description="A simple Pub/Sub framework for Google Cloud.",
-    long_description=open("README.md").read(),
-    long_description_content_type="text/markdown",
-    url="https://github.com/yourusername/pubsub-framework",  # Update with your repo URL
 )
